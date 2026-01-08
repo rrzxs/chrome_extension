@@ -1,11 +1,13 @@
 # Chrome Extensions Workspace
 
-本目录包含一系列 Chrome 扩展程序的源代码。以下是关于 Chrome 扩展开发的基础知识和本工作区的开发指南。
+本目录包含一系列 Chrome 扩展程序的源代码。
+
+> 💡 **特别说明**：本目录下所有扩展插件均为 **人人智学社** 成员使用 **Vibe Coding** 模式开发完成，并均已通过功能测试。
 
 ## 目录结构
 通常每个子目录对应一个独立的 Chrome Extension 项目。
 目前包含的项目：
-- `quick_translation/`: (如果是现有项目) 快速翻译扩展示例
+- `quick_translation/`: 快速翻译扩展示例
 
 ## Chrome 扩展程序基础 (Manifest V3)
 所有新开发的扩展程序必须遵循 **Manifest V3** 规范。
@@ -43,4 +45,6 @@
 
 ## 常用资源
 - [Chrome Extensions Documentation (Official)](https://developer.chrome.com/docs/extensions/mv3/)
-- [Manifest V3 Migration Guide](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-migration/)
+
+## 许可证
+本项目采用 [MIT License](LICENSE) 开源协议。
