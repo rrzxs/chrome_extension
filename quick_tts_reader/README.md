@@ -1,9 +1,9 @@
-# Quick Translation & Pronunciation (Chrome Extension)
+# Vibe TTS Reader (Chrome Extension)
 
-Use AI-powered voices (Microsoft Edge Neural TTS) to read selected text aloud with a simple keyboard shortcut.
+Use AI-powered voices to read selected text aloud with a simple keyboard shortcut.
 
 ## ✨ Features
-- **High-Quality AI Voices**: Uses Microsoft Edge's Neural TTS engine for natural, human-like pronunciation.
+- **High-Quality AI Voices**: Uses AI neural TTS engine for natural, human-like pronunciation.
 - **Smart Language Detection**: Automatically detects language (Chinese, Japanese, Korean, English, etc.) and picks the best voice.
 - **No UI Clutter**: Works in the background. Simply select text and press the shortcut.
 - **Instant Feedback**: Plays a subtle "tick" sound when processing starts.
@@ -12,7 +12,7 @@ Use AI-powered voices (Microsoft Edge Neural TTS) to read selected text aloud wi
 1. Open Chrome and navigate to `chrome://extensions`.
 2. Enable **Developer mode** (toggle in top right).
 3. Click **Load unpacked**.
-4. Select the `quick_translation` folder in this directory.
+4. Select the `quick_tts_reader` folder in this directory.
 
 ## 📖 Usage
 1. Open any webpage (refresh existing pages after installation).

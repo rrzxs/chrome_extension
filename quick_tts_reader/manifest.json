@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Quick Translation & Pronunciation",
+  "name": "Vibe TTS Reader",
   "version": "1.0.0",
-  "description": "Select text and press shortcut to hear high-quality pronunciation using AI voices.",
+  "description": "选中文字并按下快捷键，即可使用高质感 AI 语音进行朗读（人人智学社出品）。",
   "permissions": [
     "activeTab",
     "scripting",

@@ -8,9 +8,9 @@
 
 通常每个子目录对应一个独立的 Chrome Extension 项目：
 
-- **[quick_translation/](./quick_translation)**: **快捷翻译与朗读工具**
-  - **功能**：通过快捷键（默认 `Alt+S`）调用 Edge TTS 高质感语音朗读选中的文字。
-  - **特点**：支持多国语言自动检测，无需复杂界面，沉浸式阅读体验。
+- **[quick_tts_reader/](./quick_tts_reader)**: **Vibe TTS 朗读器**
+  - **功能**：通过快捷键（默认 `Alt+S`）调用高质感 AI 语音朗读选中的文字。
+  - **特点**：支持多国语言自动检测，无需额外点击，沉浸式声音体验。
 
 ## Chrome 扩展程序基础 (Manifest V3)
 所有新开发的扩展程序必须遵循 **Manifest V3** 规范。

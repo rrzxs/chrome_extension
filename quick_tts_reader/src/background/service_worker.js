@@ -41,7 +41,7 @@ async function sendToOffscreen(msg) {
 // --- Main Logic ---
 
 chrome.commands.onCommand.addListener(async (command) => {
-    console.log('[QuickTran] Command received:', command);
+    console.log('[VibeTTS] Command received:', command);
     if (command === 'speak-selection') {
         handleSpeakCommand();
     }
@@ -49,17 +49,17 @@ chrome.commands.onCommand.addListener(async (command) => {
 
 // Also trigger on icon click
 chrome.action.onClicked.addListener((tab) => {
-    console.log('[QuickTran] Icon clicked');
+    console.log('[VibeTTS] Icon clicked');
     handleSpeakCommand();
 });
 
 async function handleSpeakCommand() {
-    console.log('[QuickTran] handleSpeakCommand started');
+    console.log('[VibeTTS] handleSpeakCommand started');
     try {
         // 1. Get active tab
         const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
         if (!tab) {
-            console.warn('[QuickTran] No active tab found');
+            console.warn('[VibeTTS] No active tab found');
             return;
         }
 
@@ -75,7 +75,7 @@ async function handleSpeakCommand() {
                 func: () => window.getSelection().toString().trim()
             });
         } catch (scriptErr) {
-            console.error('[QuickTran] Script injection failed:', scriptErr);
+            console.error('[VibeTTS] Script injection failed:', scriptErr);
             // Play "Error" sound (Double tick)
             sendToOffscreen({ type: 'PLAY_ERROR', target: 'offscreen' }).catch(() => { });
             return;
