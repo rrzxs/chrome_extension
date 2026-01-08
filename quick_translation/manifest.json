@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Translation & Pronunciation",
+  "version": "1.0.0",
+  "description": "Select text and press shortcut to hear high-quality pronunciation using AI voices.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "https://translate.google.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/service_worker.js",
+    "type": "module"
+  },
+  "commands": {
+    "speak-selection": {
+      "suggested_key": {
+        "default": "Alt+S",
+        "mac": "Alt+S"
+      },
+      "description": "Read selected text aloud"
+    }
+  },
+  "icons": {
+    "16": "src/assets/icon16.png",
+    "48": "src/assets/icon48.png",
+    "128": "src/assets/icon128.png"
+  },
+  "action": {
+    "default_title": "Quick Translation Settings",
+    "default_icon": {
+      "16": "src/assets/icon16.png",
+      "48": "src/assets/icon48.png",
+      "128": "src/assets/icon128.png"
+    }
+  }
+}
